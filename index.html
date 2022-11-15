@@ -15,15 +15,148 @@
   </head>
 
   <body>
-    <header>
-      <div class="logo"></div>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Projects</a>
-        <a href="#">Services</a>
-        <a href="#">Contact Us</a>
-      </nav>
-    </header>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <a href="#">
+            <img
+              class="logotype"
+              src="./img/png/logo_png.png"
+              alt="building company logo"
+            />
+          </a>
+          <p class="brand">
+            <span class="cursive">The</span>
+            Box
+          </p>
+        </div>
+        <nav class="nav">
+          <a class="nav__link" href="#main">Home</a>
+          <a class="nav__link" href="#about-us">About Us</a>
+          <a class="nav__link" href="#services">Services</a>
+          <a class="nav__link" href="#footer">Contact Us</a>
+        </nav>
+      </header>
+
+      <main id="main">
+        <section class="main__info">
+          <img
+            class="main__photo"
+            src="./img/png/background.png"
+            alt="constraction photo"
+          />
+        </section>
+
+        <section class="reputation">
+          <h4>Our Reputation</h4>
+          <div class="reputation__cards">
+            <div class="reputation__card">
+              <img
+                class="reputation__img"
+                src="./img/svg/headphone.svg"
+                alt="contacts"
+              />
+              <h5 class="reputation__header">Best Services</h5>
+              <h6 class="reputation__article">
+                Nullam senectus porttitor in eget. Eget rutrum leo interdum.
+              </h6>
+            </div>
+            <div class="reputation__card">
+              <img
+                class="reputation__img"
+                src="./img/svg/headphone.svg"
+                alt="Contacts"
+              />
+              <h5 class="reputation__header">Reasons</h5>
+              <h6 class="reputation__article">
+                Cursus semper tellus volutpat aliquet lacus.
+              </h6>
+            </div>
+            <div class="reputation__card">
+              <img class="reputation__img" src="./img/svg/pencil.svg" alt="Notices" />
+              <h5 class="reputation__header">Best Designs</h5>
+              <h6 class="reputation__article">
+                Ultricies at ipsum nunc, tristique nam lectus.
+              </h6>
+            </div>
+          </div>
+        </section>
+
+        <section class="about-us" id="about-us">
+          <div class="about-us__left">
+            <img src="./img/png/man in glases.png" alt="man in glases" />
+          </div>
+          <div class="about-us__right">
+            <p class="about-us__header">About us</p>
+            <p class="about-us__article">
+              For more than 30 years we have been delivering world-class
+              construction and we&#39;ve built many lasting relationships along
+              the way.
+            </p>
+            <p class="about-us__article">
+              We&#39;ve matured into an industry leader and trusted resource for
+              those seeking quality, innovation and reliability when building in
+              the U.S.
+            </p>
+            <a class="about-us__link" href="#">More on Our History</a>
+          </div>
+        </section>
+
+        <section class="services" id="services">
+          <h2 class="services__title">Services</h2>
+          <div class="services__cards">
+            <div class="services__card card__white">
+              <img class="services__img" src="./img/svg/constraction_ico.svg" alt="constraction" />
+              <div class="card__line"></div>
+              <h3 class="card__name">Construction</h3>
+            </div>
+            <div class="services__card card__blue">
+              <img class="services__img" src="./img/svg/renovation_ico.svg" alt="renovation" />
+              <div class="card__line"></div>
+              <h3 class="card__name">Renovation</h3>
+            </div>
+            <div class="services__card card__white">
+              <img class="services__img" src="./img/svg/consultation_ico.svg" alt="consultation" />
+              <div class="card__line"></div>
+              <h3 class="card__name">Consultation</h3>
+            </div>
+            <div class="services__card card__blue">
+              <img class="services__img" src="./img/svg/repair_ico.svg" alt="consultation" />
+              <div class="card__line"></div>
+              <h3 class="card__name">Repair Services</h3>
+            </div>
+            <div class="services__card card__white">
+              <img class="services__img" src="./img/svg/architect_ico.svg" alt="consultation" />
+              <div class="card__line"></div>
+              <h3 class="card__name">Architecture</h3>
+            </div>
+            <div class="services__card card__blue">
+              <img class="services__img" src="./img/svg/electric_ico.svg" alt="consultation" />
+              <div class="card__line"></div>
+              <h3 class="card__name">Electric</h3>
+            </div>
+          </div>
+        </section>
+
+        <section class="consultation">
+            <div class="consultation__article">
+              <p class="consultation__title">
+                Free consultation with exceptional quality
+              </p>
+              <div class="consultation__content">
+                Just one call away:
+                  <a class="consultation__tel" href="tel:+8411022703">
+                    +84 1102 2703
+                  </a>
+              </div>
+            </div>
+              <a class="consultation__link" href="#registration">Get your consultation</a>
+        </section>
+
+        <section class="registration" id="registration"></div>
+
+        <footer class="footer" id="footer"></footer>
+      </main>
+    </div>
   </body>
 </html>
