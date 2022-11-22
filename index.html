@@ -18,23 +18,26 @@
     <div class="container">
       <header class="header">
         <div class="logo">
-          <a href="#">
-            <img
-              class="logotype"
-              src="./img/png/logo_png.png"
-              alt="building company logo"
-            />
-          </a>
+          <img
+            class="logotype"
+            src="./img/png/logo_png.png"
+            alt="building company logo"
+          />
           <p class="brand">
             <span class="cursive">The</span>
             Box
           </p>
         </div>
         <nav class="nav">
-          <a class="nav__link" href="#main">Home</a>
-          <a class="nav__link" href="#about-us">About Us</a>
-          <a class="nav__link" href="#services">Services</a>
-          <a class="nav__link" href="#footer">Contact Us</a>
+          <div class="mobile-nav">
+            <img src="./img/svg/burger_ico.svg" alt="menu icon" />
+          </div>
+          <div class="pc-nav">
+            <a class="nav__link" href="#main">Home</a>
+            <a class="nav__link" href="#about-us">About Us</a>
+            <a class="nav__link" href="#services">Services</a>
+            <a class="nav__link" href="#footer">Contact Us</a>
+          </div>
         </nav>
       </header>
 
@@ -73,7 +76,11 @@
               </h6>
             </div>
             <div class="reputation__card">
-              <img class="reputation__img" src="./img/svg/pencil.svg" alt="Notices" />
+              <img
+                class="reputation__img"
+                src="./img/svg/pencil.svg"
+                alt="Notices"
+              />
               <h5 class="reputation__header">Best Designs</h5>
               <h6 class="reputation__article">
                 Ultricies at ipsum nunc, tristique nam lectus.
@@ -84,7 +91,11 @@
 
         <section class="about-us" id="about-us">
           <div class="about-us__left">
-            <img src="./img/png/man in glases.png" alt="man in glases" />
+            <img
+              class="about-us__img"
+              src="./img/png/man in glases.png"
+              alt="man in glases"
+            />
           </div>
           <div class="about-us__right">
             <p class="about-us__header">About us</p>
@@ -106,32 +117,56 @@
           <h2 class="services__title">Services</h2>
           <div class="services__cards">
             <div class="services__card card__white">
-              <img class="services__img" src="./img/svg/constraction_ico.svg" alt="constraction" />
+              <img
+                class="services__img"
+                src="./img/svg/constraction_ico.svg"
+                alt="constraction"
+              />
               <div class="card__line"></div>
               <h3 class="card__name">Construction</h3>
             </div>
             <div class="services__card card__blue">
-              <img class="services__img" src="./img/svg/renovation_ico.svg" alt="renovation" />
+              <img
+                class="services__img"
+                src="./img/svg/renovation_ico.svg"
+                alt="renovation"
+              />
               <div class="card__line"></div>
               <h3 class="card__name">Renovation</h3>
             </div>
             <div class="services__card card__white">
-              <img class="services__img" src="./img/svg/consultation_ico.svg" alt="consultation" />
+              <img
+                class="services__img"
+                src="./img/svg/consultation_ico.svg"
+                alt="consultation"
+              />
               <div class="card__line"></div>
               <h3 class="card__name">Consultation</h3>
             </div>
             <div class="services__card card__blue">
-              <img class="services__img" src="./img/svg/repair_ico.svg" alt="consultation" />
+              <img
+                class="services__img"
+                src="./img/svg/repair_ico.svg"
+                alt="consultation"
+              />
               <div class="card__line"></div>
               <h3 class="card__name">Repair Services</h3>
             </div>
             <div class="services__card card__white">
-              <img class="services__img" src="./img/svg/architect_ico.svg" alt="consultation" />
+              <img
+                class="services__img"
+                src="./img/svg/architect_ico.svg"
+                alt="consultation"
+              />
               <div class="card__line"></div>
               <h3 class="card__name">Architecture</h3>
             </div>
             <div class="services__card card__blue">
-              <img class="services__img" src="./img/svg/electric_ico.svg" alt="consultation" />
+              <img
+                class="services__img"
+                src="./img/svg/electric_ico.svg"
+                alt="consultation"
+              />
               <div class="card__line"></div>
               <h3 class="card__name">Electric</h3>
             </div>
@@ -139,23 +174,59 @@
         </section>
 
         <section class="consultation">
-            <div class="consultation__article">
-              <p class="consultation__title">
-                Free consultation with exceptional quality
-              </p>
-              <div class="consultation__content">
-                Just one call away:
-                  <a class="consultation__tel" href="tel:+8411022703">
-                    +84 1102 2703
-                  </a>
-              </div>
+          <div class="consultation__article">
+            <p class="consultation__title">
+              Free consultation with exceptional quality
+            </p>
+            <div class="consultation__content">
+              Just one call away:
+              <a class="consultation__tel" href="tel:+8411022703">
+                +84 1102 2703
+              </a>
             </div>
-              <a class="consultation__link" href="#registration">Get your consultation</a>
+          </div>
+          <a class="consultation__link" href="#">Get your consultation </a>
         </section>
 
-        <section class="registration" id="registration"></div>
-
-        <footer class="footer" id="footer"></footer>
+        <footer class="footer" id="footer">
+          <div class="contacts">
+            <div class="contacts_left">
+              <h3 class="contacts__title">
+                Address:
+                <span class="contacts__content"
+                  >6391 Elgin St. Celina, Delaware 10299</span
+                >
+              </h3>
+              <h3 class="contacts__title">
+                Phone: <span class="contacts__content">+84 1102 2703</span>
+              </h3>
+              <h3 class="contacts__title">
+                Email:
+                <a class="contacts__content" href="mailto:hello@thebox.com"
+                  >hello@thebox.com
+                </a>
+              </h3>
+            </div>
+            <div class="contacts_right">
+              <div class="logo">
+                <img
+                  class="logotype"
+                  src="./img/png/logo_png.png"
+                  alt="building company logo"
+                />
+                <p class="brand">
+                  <span class="cursive">The</span>
+                  Box
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="copyrights">
+            TheBox Company &#169; 2022. By
+            <a class="author" href="https://github.com/Kicum">Kicumzp&#174;</a>
+            All Rights Reserved
+          </div>
+        </footer>
       </main>
     </div>
   </body>

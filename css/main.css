@@ -4,9 +4,10 @@
 }
 
 .container {
-  width: 1440px;
+  width: 1024px;
   margin: 0 auto;
   color: #e5e5e5;
+  padding: 0 10px;
 }
 
 .header {
@@ -15,28 +16,26 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .logo {
   margin: 0;
   display: flex;
+  justify-items: center;
 }
+
 .logotype {
+  padding: 5px;
   margin-right: 14px;
   width: 38px;
   height: 48px;
 }
 
 .brand {
+  margin: 0;
   padding-top: 5px;
   color: #2947a9;
   font-weight: 700;
   font-size: 30px;
-  line-height: 35px;
-}
-
-.nav {
-  display: flex;
-  margin: 0;
-  gap: 50px;
 }
 
 .nav__link {
@@ -60,7 +59,7 @@
 }
 
 .reputation {
-  margin: 60px 215px 85px 215px;
+  margin: 60px auto 85px;
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -70,17 +69,18 @@
 
 .reputation__cards {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 68px;
   margin-top: 50px;
 }
 
 .reputation__card {
   margin: 0;
-  width: 292px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   padding: 20px 20px 40px;
   gap: 18px;
   border: 1.4px solid #e0e3eb;
@@ -118,30 +118,28 @@
 }
 
 .about-us {
-  padding: 74px 115px 200px 115px;
-  position: relative;
+  padding: 74px 30px 200px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 40px;
 }
 
 .about-us__left {
   box-shadow: 0px 20px 24px -4px rgba(17, 24, 39, 0.1),
     0px 8px 8px -4px rgba(17, 24, 39, 0.04);
   border-radius: 2px;
-  z-index: 1;
   border-radius: 2px;
 }
 
 .about-us__right {
-  position: absolute;
-  top: 160px;
-  right: 112px;
-  min-width: 490px;
+  max-width: 490px;
   max-height: 525px;
   padding: 40px;
   background-color: #2947a9;
   color: #fff;
   display: flex;
   flex-direction: column;
-  z-index: 2;
   text-align: start;
   box-shadow: 0px 20px 24px -4px rgba(17, 24, 39, 0.1),
     0px 8px 8px -4px rgba(17, 24, 39, 0.04);
@@ -187,7 +185,7 @@
 
 .services {
   background-color: #f6f8f7;
-  padding: 45px 200px;
+  padding: 45px 100px;
 }
 
 .services__title {
@@ -216,6 +214,10 @@
   width: 271px;
   min-height: 181px;
   gap: 20px;
+}
+
+.services__card:hover {
+  cursor: pointer;
 }
 
 .card__white {
@@ -253,7 +255,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin: 165px 0;
-
   padding: 100px 110px;
   display: flex;
   gap: 180px;
@@ -262,16 +263,16 @@
 
 .consultation__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 18px;
+  line-height: 28px;
   color: #ffffff;
   margin-bottom: 30px;
 }
 
 .consultation__content {
   font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 20px;
   color: #ffffff;
 }
 
@@ -291,7 +292,7 @@
   text-decoration: none;
   color: #ffffff;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
 }
 
@@ -301,9 +302,215 @@
   transition: 0.5s;
 }
 
-.registration {
-  margin-top: 160px;
-  padding: 60px 420px;
+.footer {
+  display: flex;
+  flex-direction: column;
   background-color: #f6f8f7;
-  height: 632px;
+}
+
+.contacts {
+  padding: 85px 112px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.contacts__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #2947a9;
+}
+
+.contacts__content {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #292e3d;
+  text-decoration: none;
+}
+
+.copyrights {
+  background-color: #2947a9;
+  padding: 25px 112px;
+  text-align: center;
+}
+
+.author {
+  color: #2781e7;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.mobile-nav {
+  width: 36px;
+  height: 36px;
+}
+
+.mobile-nav:hover {
+  border: 2px solid #2947a9;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+.mobile-nav:visited {
+  border: 2px solid transparent;
+}
+
+.pc-nav {
+  display: none;
+}
+
+@media screen and (min-width: 426px) {
+  .about-us {
+    width: 100%;
+    padding: 74px 30px 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .about-us__left {
+    width: 60%;
+  }
+
+  .about-us__img {
+    width: 100%;
+  }
+
+  .about-us__right {
+    max-width: 490px;
+    min-height: 380px;
+    padding: 30px;
+    background-color: #2947a9;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    box-shadow: 0px 20px 24px -4px rgba(17, 24, 39, 0.1),
+      0px 8px 8px -4px rgba(17, 24, 39, 0.04);
+    border-radius: 2px;
+  }
+
+  .about-us__header {
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about-us__article {
+    margin: 0 0 20px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    max-width: 388px;
+  }
+
+  .about-us__link {
+    text-align: center;
+    max-width: 230px;
+    margin: 30px 0 0 0;
+    text-decoration: none;
+    color: #2947a9;
+    padding: 16px 20px;
+    background-color: #fff;
+    border: 2px solid #2947a9;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .consultation {
+    padding: 100px 60px;
+  }
+
+  .consultation__title {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .contacts {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    margin: 0 auto;
+    width: 1440px;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .pc-nav {
+    display: flex;
+    margin: 0;
+    gap: 50px;
+  }
+
+  .reputation {
+    margin: 60px 220px 85px;
+  }
+
+  .reputation__cards {
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+  }
+
+  .reputation__card {
+    margin: 0;
+    width: 292px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 20px 40px;
+    gap: 18px;
+    border: 1.4px solid #e0e3eb;
+    border-radius: 4px;
+  }
+
+  .about-us {
+    margin: 0;
+    padding: 74px 90px 200px 180px;
+    position: relative;
+  }
+
+  .about-us__right {
+    position: absolute;
+    top: 140px;
+    left: 780px;
+    max-width: 490px;
+    max-height: 525px;
+    padding: 40px;
+    background-color: #2947a9;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    text-align: start;
+    box-shadow: 0px 20px 24px -4px rgba(17, 24, 39, 0.1),
+      0px 8px 8px -4px rgba(17, 24, 39, 0.04);
+    border-radius: 2px;
+  }
+
+  .services {
+    background-color: #f6f8f7;
+    padding: 45px 200px;
+  }
+
+  .consultation {
+    gap: 40%;
+  }
+
+  .contacts {
+    flex-direction: row;
+  }
 }
